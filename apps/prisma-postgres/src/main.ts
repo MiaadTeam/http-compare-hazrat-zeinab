@@ -5,13 +5,13 @@
 
 import express from 'express';
 import * as path from 'path';
-import {bcShared} from "bc/shared"
+import {bcShared, cityData} from "bc/shared"
 
 const app = express();
 
 const runningFromShared = bcShared()
 
-console.log({runningFromShared})
+console.log({runningFromShared, cityData})
 
 app.use('/assets', express.static(path.join(__dirname, 'assets')));
 
