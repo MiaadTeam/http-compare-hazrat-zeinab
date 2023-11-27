@@ -37,5 +37,19 @@
       }
     }
   },
-  "plugins": ["@nx/deno"]
+  "plugins": ["@nx/deno"],
+  "generators": {
+    "@nx/react": {
+      "application": {
+        "babel": true
+      },
+      "library": {}
+    },
+    "@nx/next": {
+      "application": {
+        "style": "styled-components",
+        "linter": "eslint"
+      }
+    }
+  }
 }
