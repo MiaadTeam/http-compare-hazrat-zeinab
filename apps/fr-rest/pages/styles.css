@@ -1,0 +1,43 @@
+/* @font-face {
+  font-family: IranSans_Black;
+  src: url(../../../../libs/fr/shared/src/Typography/fonts/iran-sans/IRANSansWeb_Black.woff);
+}
+
+@font-face {
+  font-family: IranSans_Bold;
+  src: url(../../../../libs/fr/shared/src/Typography/fonts/iran-sans/IRANSansWeb_Bold.woff);
+}
+@font-face {
+  font-family: IranSans_Light;
+  src: url(../../../../libs/fr/shared/src/Typography/fonts/iran-sans/IRANSansWeb_Light.woff);
+}
+@font-face {
+  font-family: IranSans_Medium;
+  src: url(../../../../libs/fr/shared/src/Typography/fonts/iran-sans/IRANSansWeb_Medium.woff);
+}
+@font-face {
+  font-family: IranSans_UltraLight;
+  src: url(../../../../libs/fr/shared/src/Typography/fonts/iran-sans/IRANSansWeb_UltraLight.woff);
+}
+@font-face {
+  font-family: IranSans_Web;
+  src: url(../../../../libs/fr/shared/src/Typography/fonts/iran-sans/IRANSansWeb.woff);
+} */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: IranSans_web;
+}
+body {
+  direction: rtl;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
