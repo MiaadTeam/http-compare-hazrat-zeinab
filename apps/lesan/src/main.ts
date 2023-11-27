@@ -98,7 +98,7 @@ const seedValidator = () => {
 const seed: ActFn = async (body) => {
   const { city, province } = body.details.set;
   const data = JSON.parse(
-    await Deno.readTextFile("../src/dataset/dataparsed.json"),
+    await Deno.readTextFile("./apps/lesan/dataset/dataparsed.json"),
   ) as any[];
 
   const insertedCountry = await countries.insertMany({
@@ -201,4 +201,9 @@ coreApp.acts.setAct({
   fn: getCountries,
 });
 // ------------------ Get Countries  ------------------
-coreApp.runServer({ port: 1366, typeGeneration: false, playground: true });
+coreApp.runServer({
+  port: 1366,
+  typeGeneration: false,
+  playground: true,
+  cors: ["http://localhost:4200"],
+});
