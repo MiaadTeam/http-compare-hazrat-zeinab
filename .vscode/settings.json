@@ -1,0 +1,5 @@
+{
+  "deno.enablePaths": ["apps/apps/lesan", "apps/lesan"],
+  "deno.unstable": true,
+  "deno.importMap": "./import_map.json"
+}

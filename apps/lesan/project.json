@@ -1,0 +1,39 @@
+{
+  "name": "lesan",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "sourceRoot": "apps/lesan/src",
+  "targets": {
+    "build": {
+      "executor": "@nx/deno:esbuild",
+      "outputs": ["{workspaceRoot}/dist/apps/lesan"],
+      "options": {
+        "main": "apps/lesan/src/main.ts",
+        "outputFile": "dist/apps/lesan/main.js",
+        "denoConfig": "apps/lesan/deno.json"
+      }
+    },
+    "serve": {
+      "executor": "@nx/deno:run",
+      "options": {
+        "buildTarget": "lesan:build",
+        "watch": true
+      }
+    },
+    "test": {
+      "executor": "@nx/deno:test",
+      "outputs": ["{options.coverageDirectory}"],
+      "options": {
+        "coverageDirectory": "coverage/apps/lesan",
+        "denoConfig": "apps/lesan/deno.json"
+      }
+    },
+    "lint": {
+      "executor": "@nx/deno:lint",
+      "options": {
+        "denoConfig": "apps/lesan/deno.json"
+      }
+    }
+  },
+  "tags": []
+}
