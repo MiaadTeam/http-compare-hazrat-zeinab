@@ -16,6 +16,10 @@
     "baseUrl": ".",
     "paths": {
       "bc/shared": ["libs/bc/shared/src/index.ts"],
+      "fr-shared": ["libs/fr-shared/src/index.ts"],
+      "fr-shared/server": ["libs/fr-shared/src/server.ts"],
+      "fr-state": ["libs/fr-state/src/index.ts"],
+      "fr-state/server": ["libs/fr-state/src/server.ts"],
       "shared": ["libs/bc/src/index.ts"]
     }
   },

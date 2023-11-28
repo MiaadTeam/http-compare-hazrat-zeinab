@@ -1,0 +1,16 @@
+{
+  "name": "fr-shared",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/fr-shared/src",
+  "projectType": "library",
+  "tags": [],
+  "targets": {
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/fr-shared/**/*.{ts,tsx,js,jsx}"]
+      }
+    }
+  }
+}
