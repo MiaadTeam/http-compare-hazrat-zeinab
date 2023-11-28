@@ -1,7 +1,7 @@
-# run me in  /apps/prisma-postgres/src:
-# hurl --variables-file .env ./http/country/create.hurl
+# run me in root of prisma-express-postgres:
+# hurl --variables-file .env ./http/country/create.hurl 
 
-POST http://localhost:{{SERVER_PORT}}/prisma/country/create
+POST http://localhost:{{SERVER_PORT}}/prisma/countries
 Content-Type:application/json
 
 {
